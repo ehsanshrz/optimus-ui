@@ -11,7 +11,9 @@ import { PanelModule } from '@openng/optimus-ui/panel';
     imports: [BlockUIModule, ButtonModule, PanelModule, AppCode, AppDocSectionText],
     template: `
         <app-docsectiontext>
-            <p>The element to block should be placed as a child of BlockUI and <i>blocked</i> property is required to control the state.</p>
+            <p>
+                The element to block should be placed as a child of BlockUI and <i>blocked</i> property is required to control the state. When targeting a custom component, it must implement the BlockableUI interface.
+            </p>
         </app-docsectiontext>
         <div class="card">
             <p-button label="Block" (click)="blockedPanel = true" class="me-2" severity="secondary" />
