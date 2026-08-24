@@ -8,7 +8,7 @@ Screen Reader BlockUI manages aria-busy state attribute when the UI gets blocked
 
 ## Basic
 
-The element to block should be placed as a child of BlockUI and blocked property is required to control the state.
+The element to block should be placed as a child of BlockUI and blocked property is required to control the state. When targeting a custom component, it must implement the BlockableUI interface.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -106,4 +106,3 @@ BlockUI can either block other components or the whole page.
 | Token | CSS Variable | Description |
 |-------|--------------|-------------|
 | blockui.border.radius | --p-blockui-border-radius | Border radius of root |
-
